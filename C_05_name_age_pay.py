@@ -10,7 +10,7 @@ def int_check(question):
             # Change the response to an integer and check that it's more than zero
             response = int(input(question))
 
-            if response < 5:
+            if response > 0:
                 return response
             else:
                 print(error)
@@ -79,7 +79,3 @@ while True:
     # ask use for payment method(cash / credit / ca / cr)
     pay_method = string_check("Payment method: ", payment_list, 2)
     print(f"{name} has bought a ticket ({pay_method})")
-
-
-
-
